@@ -1,0 +1,13 @@
+//两数相加
+import java.util.Scanner;
+public class main {
+	public static void main(String[] args) {
+		//定义变量
+		int n1 = 10;
+		int n2 = 30;
+		//求和
+		int sum = n1 + n2;
+		//输出结果
+		System.out.println("" + sum);
+	}
+}
