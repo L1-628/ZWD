@@ -1,0 +1,11 @@
+import java.util.Scanner;
+public class main {
+    public static void main(String[] args){
+    System.out.println("周文迪\t何玉婷");
+    System.out.println("周文迪说：\"晚安\"");
+    System.out.println("周文迪\n何玉婷");
+    System.out.println("周文迪\r何玉婷");
+    System.out.println("C:\\Windows\\System32\\cmd.exe");
+    }
+}
+//：\t--制表符；\--转义符；\n--换行符；\r--回车符；
