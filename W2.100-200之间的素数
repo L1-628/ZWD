@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+    //定义变量
+    int i , j;
+    //循环100-200之间的数
+    for(i = 101; i <= 200; i ++){
+    //依次拿后面的数相除，如果被整除，即不是素数，跳出整个循环，不再执行下面的if操作。
+        for(j = 102; j <= i; j ++){
+            if(i % j  == 0)
+            break;
+        }
+        //如果唯一能被整除的数刚好等于它本身，即为素数
+        if(i == j){
+            System.out.print(i+"");
+        }
+    }
+  }
+}
