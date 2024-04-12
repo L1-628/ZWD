@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class Main{
+	public static void main(String[] args) {
+		//输入两个数i，j
+		Scanner scanner = new Scanner(System.in);
+		System.out.printf("输入两个整数：> ");
+		int i = scanner.nextInt();
+		int j = scanner.nextInt();
+		//定义min为i, j的最小公倍数
+		int min ;
+		if(i > j) {
+			min = i;
+		}
+		else if(i < j) {
+			min = j;
+		}
+		else {
+			min = i;
+		}
+		//循环
+		do {
+			//如果min能够同时被两数整除，则跳出循环
+			if(min % j == 0&&min % i == 0) {
+				break;
+			}
+			min ++;
+		}while(min < 100);
+		//输出
+		System.out.print(min+"");
+	}
+}
