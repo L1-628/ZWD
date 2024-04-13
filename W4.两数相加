@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Main{
+	public static void main(String[] args) {
+		//输入两个函数
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("请输入两个整数:>");
+		//定义两个变量
+		int a = scanner.nextInt();
+	    int b = scanner.nextInt(); 
+	    //相加
+	    int sum = a + b;
+	    //输出
+		System.out.println("和 = "+sum);
+	}
+}
