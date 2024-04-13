@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		System.out.println("王刚");
+		//定义初始变量
+		int age = 20;
+		double weight = 139.67;
+		float hight = 175;
+		//变化 
+		age += 1;
+		weight += 20.89;
+		hight += 5.7;
+		//输出
+		System.out.println("年龄：>"+age);
+		System.out.println("体重：>"+weight);
+		System.out.println("身高：>"+hight);
+		
+	}
+}
