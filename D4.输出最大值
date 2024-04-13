@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Main{
+	public static void main(String[] args) {
+		//创建Scanner对象，用于从控制台读取输入
+		Scanner scanner = new Scanner(System.in);
+		//提示用户输入
+		System.out.print("请输入10个整数：>");
+		//定义整数数组，存储10个整数
+		int []a = new int[10];
+		//循环输入
+		for (int i = 0; i < 10; i ++) {
+			a[i] = scanner.nextInt();
+		}
+		//初始化max为该数组的第一个元素
+		int max = a[0];
+		//循环比较
+		for(int i = 1; i < 10; i ++) {
+			//如果找到比max还大的元素，更新最大值
+			if(a[i] > max) {
+				max = a[i];
+			}
+		}
+		//输出
+		System.out.println(""+max);
+	}
+}
