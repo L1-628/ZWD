@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Main{
+	public static void main(String[] args) {
+		//定义变量
+		int age = 21;//年龄
+		double hight = 166.87;//身高
+		float weight = 100;//体重
+		char gender = '男';//性别
+		String name = "周文迪";//姓名
+		//输出
+		System.out.println("个人信息：>");
+		System.out.println(age);
+		System.out.println(hight);
+		System.out.println(weight);
+		System.out.println(gender);
+		System.out.println(name);
+	}
+}
