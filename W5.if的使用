@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Main{
+	public static void main(String[] args) {
+		//创建对象，用于控制台读取输入
+		Scanner scanner = new Scanner(System.in);
+		//定义变量
+		int input = 0;
+		//提示作者输入
+		System.out.print("要不要好好学习（1：要，0：不要）>");
+		input = scanner.nextInt();
+		if(input ==1) {
+			System.out.println("好工作");
+		}else {
+			System.out.println("烤红薯");
+		}
+		//关闭对象
+		scanner.close();
+	}
+}
