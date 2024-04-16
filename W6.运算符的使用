@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class Main{
+	public static void main(String[] args) {
+		float a = 9 / 2.0f;//使用2.0f来确保是浮点数除法
+		int b = 9 % 2;
+		int c = 2;
+		int d = c << 1;//左移操作
+		//使用System.out.printf进行格式化输出
+		System.out.printf("%.2f\n", a);//%.2f表示输出浮点数并保留两位小数
+		System.out.printf("%d\n", b);
+		System.out.printf("%d\n",d);
+	}
+}
