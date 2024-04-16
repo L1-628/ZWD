@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Main{
+	public static void main(String[] args) {
+		//定义变量
+		int 么么 = 0;
+		//while循环
+		while(么么 < 1235) {
+			//输出
+			System.out.println("嘻嘻");
+			么么++;
+		}
+		//输出
+		if(么么 == 1235){
+			System.out.println("切");
+		}
+		
+	}
+}
