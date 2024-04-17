@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class h{
+    public static void main(String[] args){
+    	//创建scanner对象，用于控制台读取输入
+        Scanner scanner = new Scanner(System.in);
+        int a = scanner.nextInt();
+        int b = scanner.nextInt();
+        int c = scanner.nextInt();
+        //关闭对象
+        scanner.close();
+        int result = (a + b)*c;
+        System.out.println(result);
+    }
+}
