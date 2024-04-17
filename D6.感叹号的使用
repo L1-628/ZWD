@@ -1,0 +1,11 @@
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		int a = 0;
+		if(a != 0) {
+			System.out.println("good boy!");
+		}if(a == 0) {
+			System.out.println("bad girl!");
+		}
+	}
+}
