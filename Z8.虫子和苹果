@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Main{
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int n = scanner.nextInt();//箱子里有n个苹果
+		int x = scanner.nextInt();//虫子x小时吃一个苹果
+		int y = scanner.nextInt();//y小时后，还剩几个完整的苹果
+		if(y % x == 0) {//如果能整除，刚好吃完，直接打印
+		    int a = n - (y / x);
+		    System.out.println(""+a);
+		}else if(y % x != 0){//如果不能整除，还剩一部分，再减1；再打印
+			int a = n - (y / x)-1;
+			System.out.println(""+a);
+		}
+	}
+}
