@@ -1,0 +1,37 @@
+import java.util.Scanner;
+public class Main{
+	public static void main(String[] args) {
+		float num1 = 1.5F;
+		double num2 = 1.5;
+		double num3 = 1.5f;
+		double num4 = .521;
+		double num5 = 2.1234567851;
+		float num6 = 2.1234567851f;
+		double num7 = 2.7;
+		double num8 = 8.1 / 3;
+		
+		System.out.println(num1);
+		System.out.println(num2);
+		System.out.println(num3);
+		System.out.println(num4);
+		System.out.println(num5);
+		System.out.println(num6);
+		if(Math.abs(num7 - num8) < .0000001) {
+			System.out.println("num7 = num8");
+		}
+		System.out.println(5.12e2);//5.12*10的2次方
+		System.out.println(5.12E-2);//5.12/10的2次方
+		
+		
+	}
+}
+//输出结果
+//1.5
+//1.5
+//1.5
+//0.521
+//2.1234567851
+//2.1234567
+//num7 = num8
+//512.0
+//0.0512
