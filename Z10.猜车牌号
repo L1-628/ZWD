@@ -1,0 +1,19 @@
+//前2位数是相同的，后2位数是相同的，这4位数恰好是一个2位数的平方数
+import java.util.Scanner;
+public class Main{
+	public static void main(String[] args) {
+	    for(int a = 999; a < 10000; a ++) {
+	    	int Onedigit = a % 10;
+		    int Tendigits = (a / 10) % 10;
+		    int Hundreddigits =(a / 100) % 10;
+		    int Thousanddigits =a /1000;
+	    if(Onedigit == Tendigits && Hundreddigits == Thousanddigits) {
+	    	for(int Numberofopendroots= 9; Numberofopendroots <100;Numberofopendroots++){
+	    		if(Numberofopendroots == Math.sqrt(a)) {
+	    	            System.out.println(a);
+	    		}
+	    	}
+	    }
+	    }
+	}
+}
