@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Main{ 
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int num = scanner.nextInt();
+		int  j;
+		if(num >= 1) {
+			for(j = 2; j < num;j++) {
+				if(num % j == 0) {
+					break;
+				}
+			}
+			if(num == j) {	
+				System.out.println("prime");
+			}else {
+				System.out.println("not prime");
+			}
+		}
+		
+	}
+}
