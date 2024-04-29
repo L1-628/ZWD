@@ -1,0 +1,29 @@
+//建立多组测试数据
+import java.util.*;
+import java.io.*;
+import java.math.*;
+public class h{ 
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		while(scanner.hasNext()) {
+			int a = scanner.nextInt();
+			int n = scanner.nextInt();
+			int num = 0;
+			int sum = 0;
+			if(a >= 0&& a <= 9) {
+				if(n >= 0&& n <= 9) {
+					for(int i = 1; i <= n; i++) {
+						//10的i-1次方
+						int j =(int) Math.pow(10, i-1);
+						int z = a * j;
+					    num += z;
+					    sum += num;
+					}
+					System.out.println(sum);
+				}
+			}
+			
+		}
+		
+	}
+}
