@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Main{
+	//定义一个函数，计算三个数的立方之和
+	public static int sum(int a,int b,int c) {
+		return (int) (Math.pow(a, 3) + Math.pow(b, 3) + Math.pow(c, 3));
+	}
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int m = scanner.nextInt();
+		int n = scanner.nextInt();
+		if(m <= 100&&n <=999) {
+			for(int number = m;number <= n;number ++) {
+				int g = number % 10;
+				int s = (number / 10)%10;
+				int b = number /100;
+				//调用sum函数
+				if(number == sum(g,s,b))  {
+					//输出结果
+					System.out.println(""+number);
+				}
+			}
+		}
+	}
+}
