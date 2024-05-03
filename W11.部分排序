@@ -1,0 +1,40 @@
+import java.util.Arrays;  
+import java.util.Scanner;  
+  
+public class Main {  
+    public static void main(String[] args) {  
+        Scanner scanner = new Scanner(System.in);  
+        int n = scanner.nextInt();  
+        int[] n1 = new int[n];  
+  
+        // 读取数组元素  
+        for (int i = 0; i < n1.length; i++) {  
+            n1[i] = scanner.nextInt();  
+        }  
+  
+        // 不需要关闭scanner，因为程序即将结束  
+  
+        // 检查数组长度是否足够进行排序  
+        if (n >= 5) {  
+            // 计算需要排序的起始索引  
+            int start = Math.max(0, n1.length - 5);  
+  
+            // 使用Arrays.sort对最后5个元素进行排序  
+            Arrays.sort(n1, start, n1.length);  
+  
+            // 打印整个数组，但不包括方括号  
+            for (int i = 0; i < n1.length; i++) {  
+                System.out.print(n1[i]);  
+                if (i < n1.length - 1) {  
+                    System.out.print(", ");  
+                }  
+            }  
+            System.out.println(); // 换行  
+        } else {  
+            System.out.println("Array size should be at least 5.");  
+        }  
+  
+        // 如果不再需要scanner，可以关闭它，但在这个例子中，程序已经结束  
+        // scanner.close();  
+    }  
+}
