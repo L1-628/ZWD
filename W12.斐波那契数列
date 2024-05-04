@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class Main{
+	public static void main(String[] args) {
+		Scanner scanner =new Scanner(System.in);
+		//建立对象
+		int n = scanner.nextInt();
+		int o  = 1;
+		int t = 1;
+		if(n > 1) {
+			for(int a = 2;a <= n; a ++) {
+				int sum = o + t;
+				o = t;
+				t = sum;
+			}
+		}
+		if(n > 2) {
+		System.out.println(o);
+		}
+	}
+}
