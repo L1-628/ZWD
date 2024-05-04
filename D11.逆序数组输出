@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Main{
+	public static void main(String[] args) {
+		Scanner scanner =new Scanner(System.in);
+		//建立对象
+		int n = scanner.nextInt();
+		//创建数组
+		int []n1 = new int [n];
+		//输入数组
+		for(int i = 0; i < n1.length;i ++) {
+			n1[i] = scanner.nextInt();
+		}
+		if(n > 1 && n <= 10) {
+			//从数组里最后一个数开始循环
+			for(int j = 1;j < n1.length + 1;j ++) {
+				//直接打印这个下标的数
+				System.out.print(n1[ n1.length - j ]);
+				//打印他们之间的空格
+				if(j < n1.length ) {
+					System.out.print(" ");
+				}
+			}
+		}
+	}
+}
