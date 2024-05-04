@@ -1,0 +1,45 @@
+import java.util.Scanner;  
+  
+public class Main{  
+    public static void main(String[] args) {  
+        Scanner scanner = new Scanner(System.in);  
+        int n = scanner.nextInt();  
+        int[] n1 = new int[n];  
+  
+        // 读取数组元素  
+        for (int i = 0; i < n1.length; i++) {  
+            n1[i] = scanner.nextInt();  
+        } 
+        int max = Integer.MIN_VALUE;
+        int min = Integer.MAX_VALUE;
+        if (n >= 1&&n <= 10) {
+        	for(int j = 0;j < n1.length;j++) {
+            	
+            for (int i = 0; i < n1.length; i++) {  
+            	if(max <= n1[i]) {
+            		max = n1[i];
+            	}
+            	if(min >= n1[i]) {
+            		min = n1[i];
+            	} 
+            }
+            if(n1[j] != max && n1[j] != min) {
+            	System.out.print(n1[j]);
+            }else if(n1[j] == max) {
+            	n1[j] = min;
+            	System.out.print(n1[j]);
+            }else if(n1[j] == min) {
+            	n1 [j] = max;
+            	System.out.print(n1[j]);
+            }
+            if( j < n1.length - 1) {
+            	System.out.print(" ");
+            }
+            
+            }
+           
+        } 
+  scanner.close();
+        
+    }  
+}
