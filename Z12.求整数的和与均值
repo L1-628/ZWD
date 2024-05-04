@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Main{
+	public static void main(String[] args) {
+		Scanner scanner =new Scanner(System.in);
+		//建立对象
+		int n = scanner.nextInt();
+		//创建数组
+		int []n1 = new int [n];
+		//输入数组
+		for(int i = 0; i < n1.length;i ++) {
+			if(Math.abs(i) <= 10000) {
+			n1[i] = scanner.nextInt();
+		  }
+		}
+		if(n > 1 && n <= 10000) {
+			int sum = 0;
+			for(int j = 0;j <= n1.length - 1;j ++) {
+				sum += n1[ j ];
+			}
+			System.out.print(sum);
+			double avg =(double) sum / n;
+			System.out.print(" ");
+			System.out.printf("%.5f",avg);
+				
+		}
+	}
+}
