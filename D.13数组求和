@@ -1,0 +1,37 @@
+import java.io.*;  
+import java.util.*;  
+  
+public class Main {  
+    public static void main(String[] args) {  
+        Scanner scanner = new Scanner(System.in);  
+        int N = scanner.nextInt();  
+        int sum = 0;  
+        int currentMax = 1; // 当前块的最大值  
+        int count = 0; // 计数器，用于跟踪已经累加了多少项  
+  
+        while (count < N) {  
+            // 添加当前最大值到和  
+            sum += currentMax;  
+            count++;  
+              
+            // 如果计数器小于N，则继续添加下一个数和当前最大值（如果存在）  
+            if (count < N) {  
+                sum += currentMax + 1;  
+                count++;  
+                  
+                // 如果计数器还小于N，并且不是第一个数（即不是块的起始），则再添加下一个数  
+                if (count < N && currentMax > 1) {  
+                    sum += currentMax;  
+                    count++;  
+                }  
+                  
+                // 准备下一个块的最大值  
+                currentMax++;  
+            }  
+        }  
+  
+        System.out.println(sum);  
+        scanner.close();  
+    }  
+}
+//求数列1、2、3、2、3、4、3、4、5、4、5、6、…前N项和。
