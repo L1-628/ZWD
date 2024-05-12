@@ -1,0 +1,39 @@
+////////////类型转换
+//char->int->long->float->double
+//byte->short->int->long->float->double
+//byte，short，char三者可以计算，混合计算与单独计算时首先转换为int类型
+import java.util.Scanner;
+public class Main{
+	public static void main(String[] args) {
+		int num = 'a';
+		double d = 80;
+		int num1 = 10;
+		float num2 = num1 + 1.1F;
+		double num3 = num1 + 1.1;
+		System.out.println(num);
+		System.out.println(d);
+		System.out.println(num1);
+		System.out.println(num2);
+		System.out.println(num3);
+		String s1 = num1 + " ";
+		String s2 = num2 + " ";
+		String s3 = num3 + " ";
+		String s4 = "123";
+		System.out.println(s4.charAt(0));
+		int num4 = Integer.parseInt(s4);
+		double num5 = Double.parseDouble(s4);
+		float num6 = Float.parseFloat(s4);
+		long num7 = Long.parseLong(s4);
+		byte num8 = Byte.parseByte(s4);
+		boolean num9 = Boolean.parseBoolean("true");
+		short num10 = Short.parseShort(s4);
+		System.out.println(s1 + " " + s2 + " " + s3);
+		System.out.println(num4);
+		System.out.println(num5);
+		System.out.println(num6);
+		System.out.println(num7);
+		System.out.println(num8);
+		System.out.println(num9);
+		System.out.println(num10);
+	}
+}
