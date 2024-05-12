@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Main{
+	public static void main(String[] args) {
+		char c1 = 'a';
+		char c2 = '周';
+		char c3 = '\t';
+		char c4 = 97;
+		System.out.println(c1);
+		System.out.println((int)c2);
+		System.out.println(c3);
+		System.out.println((int)c4);
+		System.out.println('a' + 10);
+		char c5 = 'b'+ 1;
+		System.out.println((int)c5);//99
+		System.out.println(c5);//99->对应的字符->ASCII->c
+	}
+}
+//在java中char默认输出的是unicode码对应的字符
+//char类型可以运算
