@@ -1,0 +1,11 @@
+import java.util.Scanner;
+public class Main{
+	public static void main(String[] args) {
+		boolean isPass = false;//只能赋值true或者false
+		if(isPass == true) {
+			System.out.println("good!");
+		}else {
+			System.out.println("crazy!");
+		}
+	}
+}
