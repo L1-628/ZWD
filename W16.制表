@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class Main{
+	public static void main(String[] args) {
+		String n = "何玉婷";
+		byte a = 15;
+		short g = 67;
+		char s = '女';
+		String h = "学习";
+		System.out.println("姓名\t年龄\t成绩\t性别\t爱好\n"+n+"\t"+a+"\t"+g+
+				"\t"+s+"\t"+h);
+	}
+}
