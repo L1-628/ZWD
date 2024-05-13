@@ -1,0 +1,33 @@
+import java.util.Scanner;  
+  
+public class Main {  
+    public static void main(String[] args) {  
+        Scanner scanner = new Scanner(System.in);  
+        // 读取一行输入  
+        String input = scanner.nextLine();  
+        // 根据空格分割单词  
+        String[] words = input.split("\\s+");  
+        // 反转单词数组  
+        reverseArray(words);  
+        // 将反转后的单词数组重新组合成字符串  
+        String output = String.join(" ", words);  
+        // 输出结果  
+        System.out.println(output);  
+        scanner.close();  
+    }  
+  
+    // 反转数组的方法  
+    private static void reverseArray(String[] arr) {  
+        int left = 0;  
+        int right = arr.length - 1;  
+        while (left < right) {  
+            // 交换左右元素  
+            String temp = arr[left];  
+            arr[left] = arr[right];  
+            arr[right] = temp;  
+            // 移动指针  
+            left++;  
+            right--;  
+        }  
+    }  
+}
