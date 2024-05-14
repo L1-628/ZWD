@@ -1,0 +1,9 @@
+import java.util.Scanner;
+public class Main{
+	public static void main(String[] args) {
+		int day = 59;
+		int week = 59 / 7;
+		int lastDay = 59 % 7;
+		System.out.println(day+"天 合"+week+"个星期零"+lastDay+"天");
+	}//59天 合8个星期零3天
+}
