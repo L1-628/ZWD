@@ -1,0 +1,11 @@
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		int a = 4;
+		int b = 8;
+		if(a < 1 & ++b < 50) {
+			System.out.println("ok300");
+		}
+		System.out.println("a="+a+" b="+b);
+	}//a=4 b=9
+}
