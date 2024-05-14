@@ -1,0 +1,8 @@
+import java.util.Scanner;
+public class Main{
+	public static void main(String[] args) {
+		int fahrenheit = 178;//fahrenheit fahrenheit
+		double temperature = 5.0 / 9 * (fahrenheit - 100);
+		System.out.println("华氏度"+fahrenheit+"对应的温度="+temperature);
+	}
+}
