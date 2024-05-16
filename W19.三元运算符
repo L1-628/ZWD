@@ -1,0 +1,10 @@
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		int a = 7;
+		int b = 90;
+		int c = 533;
+		int max = (a > b ? a : b) > c ? (a > b ? a : b) : c;
+		System.out.println("max="+max);
+	}
+}
