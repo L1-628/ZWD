@@ -1,0 +1,9 @@
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		int a = 12;
+		int b = 20;
+		int result = a > b ? a ++: --b;
+		System.out.println(result+" "+a+" "+b);
+	}
+}//19 12 19
