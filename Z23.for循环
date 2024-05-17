@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Main{
+	public static void main(String[] args) {
+		int i = 1;
+		for(;i <= 10;) {
+			System.out.println("周文迪"+ i);
+			i++;
+		}
+		int count = 3;
+		for(int i1 = 0,j = 0;i1 < count;i1++,j+= 2) {
+			System.out.println("i="+i1+"j="+j);
+		}
+		//无限循环（死循环）
+//		for(;;) {
+//			System.out.println("haihai");
+//		}
+//		
+	}
+}
