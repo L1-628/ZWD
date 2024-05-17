@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class h{
+	public static void main(String[] args) {
+		int count = 0;
+		int sum = 0;
+		for(int i = 1; i < 101;i ++) {
+			if(i % 9 == 0) {
+				System.out.print(" "+i);
+				count++;
+				 sum  += i;
+			}
+		}
+		System.out.println();
+		System.out.println(count);
+		System.out.println(sum);
+	}
+}
