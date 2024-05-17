@@ -1,0 +1,11 @@
+import java.util.Scanner;
+public class Main{
+	public static void main(String[] args) {
+		String s1 = "347";
+		double str1 = Double.parseDouble(s1);
+		System.out.println("s1 ="+s1);
+		char c4 = '男';
+		String str2 = c4 +" ";
+		System.out.println(str2);
+	}
+}
