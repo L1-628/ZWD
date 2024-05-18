@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Main{
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		String name = "";
+		String passWord = "";
+		for(int i = 1;i <= 3;i++) {
+			System.out.println("请输入名字:>");
+			name = scanner.next();
+			System.out.println("请输入密码:>");
+			passWord = scanner.next();
+			if("丁真".equals(name)&&"666".equals(passWord)) {
+				System.out.println("登录成功");
+				break;
+			}
+			else {
+				System.out.println("你还有"+(3 - i)+"次机会");
+			}
+		}
+	}
+}
