@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Main{
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int Sum = 0;
+		int Avg = 0;
+		for(int j = 1; j <= 3; j ++) {
+			int sum = 0;
+			int avg = 0;
+			for(int i = 1; i <= 5;i++) {
+				System.out.println("请输入"+j+"班第"+i+"个学生的成绩:>");
+				int sore = scanner.nextInt();
+				sum += sore;
+			}
+			avg = sum / 5;
+			System.out.println(j+"班的平均分为"+avg);
+			Sum += sum;	
+		}
+		Avg = Sum / 15;
+		System.out.println("所有班的平均分为"+Avg);
+	}
+}
