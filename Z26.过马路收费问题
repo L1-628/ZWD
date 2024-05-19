@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Main{
+	public static void main(String[] args) {
+		double moneny = 100000d;
+		int count = 0;
+		while(true) {
+			if(moneny > 50000) {
+				moneny *= 0.95;
+				count++;
+			}else if(moneny >= 1000) {
+				moneny -= 1000;
+				count++;
+		}else{
+				break;
+			}
+		}
+		System.out.println("一共可以过"+count+"个路口");
+	}
+}
