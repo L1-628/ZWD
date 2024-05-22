@@ -1,0 +1,34 @@
+//import java.util.Scanner;
+//public class h{
+//	public static void main(String[] args) {
+//		Scanner scanner = new Scanner(System.in);
+//		int money = scanner.nextInt();
+//		int M100 = money / 100;
+//		int M50 = (money - M100 * 100) / 50;
+//		int M20 = (money - M100 * 100 - M50 * 50) / 20;
+//		int M10 = (money - M100 * 100 - M50 * 50 - M20 * 20) / 10;
+//		int M5 = (money - M100 * 100 - M50 * 50 - M20 * 20 - M10 * 10) / 5;
+//		int M1 = money - M100 * 100 - M50 * 50 - M20 * 20 - M10 * 10 - M5 * 5;
+//		System.out.println(M100);
+//		System.out.println(M50);
+//		System.out.println(M20);
+//		System.out.println(M10);
+//		System.out.println(M5);
+//		System.out.println(M1);
+//	}
+//}
+import java.util.Scanner;
+public class h{
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int money = scanner.nextInt();
+		int []n = {100, 50, 20, 10, 5, 1};
+		for(int i = 0;i < n.length;i++) {
+			int z = money / n[i] * n[i];
+			n[i] = money / n[i];
+			money -= z;
+			System.out.println(n[i]);
+		}
+		scanner.close();
+	}
+}
