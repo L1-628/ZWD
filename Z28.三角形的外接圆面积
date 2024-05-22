@@ -1,0 +1,22 @@
+import java.util.*;
+import java.io.*;
+import java.util.Scanner;
+public class Main{
+	public static void main(String[] args) {
+		Scanner cin = new Scanner(System.in);
+		while(cin.hasNext()) {
+			double a = cin.nextDouble();
+			double b = cin.nextDouble();
+			double c = cin.nextDouble();
+			double cosA = (b * b + c * c - a * a ) / (2.0 * b * c);
+			double sinA = Math.sqrt(1 - Math.pow(cosA, 2));
+			double r = (a / 2.0) / sinA;
+			double area = Math.PI * r * r;
+			System.out.printf("%.2f\n",area);
+		}
+		cin.close();
+	}
+}
+//已知三角形三条边长L1，L2，L3(均为浮点型数据，均从键盘输入)，
+//求其外接圆的面积。提示：L1为∠1所对边，利用公式R=(L1/2)/sin∠1求外接
+//圆半径，其中∠1可通过余弦定理求得。
