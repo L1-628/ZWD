@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Main{
+	public static void main(String[] args) {
+		Scanner cin = new Scanner(System.in);
+		while(cin.hasNext()) {
+			double a = cin.nextDouble();
+			double b = cin.nextDouble();
+			double c = cin.nextDouble();
+			double maxLength = a > b? a > c ? a : c : b;
+			double minLength = a < b? a < c ? a : c : b;
+			double middleIength = a + b + c - maxLength - minLength;
+			double cosmax = (minLength * minLength + middleIength * 
+					middleIength - maxLength * maxLength) / (2.0 * minLength * middleIength);
+			
+			System.out.printf("%.4f\n",Math.toDegrees(Math.acos(cosmax)));
+		}
+		cin.close();
+	}//8.7 6.5 9.2
+}
