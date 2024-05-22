@@ -1,0 +1,25 @@
+import java.util.*;
+import java.io.*;
+import java.util.Scanner;
+public class Main{
+	public static void main(String[] args) {
+		Scanner cin = new Scanner(System.in);
+		double arr[] = new double[8];
+		while(cin.hasNext()) {
+			for(int i = 0; i < 8;i++ ) {
+				arr[i] = cin.nextDouble();
+			}
+			double x1 = arr[0];
+			double y1 = arr[1];
+			double x2 = arr[2];
+			double y2 = arr[3];
+			double x3 = arr[4];
+			double y3 = arr[5];
+			double x4 = arr[6];
+			double y4 = arr[7];
+			double area1 = Math.abs((x2 - x1) * (y2 - y3) - (y2 - y1) * (x2 - x3)) / 2.0;
+			double area2 = Math.abs((x2 - x3) * (y4 - y3) - (y2 - y3) * (x4 - x3)) / 2.0;
+			System.out.printf("area = %.4f\n",area1 + area2);
+		}
+	}
+}
