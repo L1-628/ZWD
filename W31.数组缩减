@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class h{
+	public static void main(String[] args) {
+		int arr1[] = {1, 2, 3, 4, 5, 6};
+		Scanner cin = new Scanner(System.in);
+		do {
+			int arr2[] = new int[arr1.length - 1];
+			for(int i = 0; i < arr2.length;i++) {
+				arr2[i] = arr1[i];
+			}
+			arr1 = arr2;
+			System.out.println("是否缩减一位?yes/no");
+			String s = cin.next();
+			if("no".equals(s)) {
+				break;
+			}
+			for(int i = 0; i < arr2.length;i++) {
+				System.out.print(arr1[i]+" ");
+			}
+			System.out.println();
+			if(arr1.length == 1) {
+				System.out.println("已缩减到极限！");
+				break;
+			}
+			
+		}while(true);
+		System.out.println("程序结束");
+		cin.close();
+	}
+}
