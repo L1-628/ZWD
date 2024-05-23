@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class h{
+	public static void main(String[] args) {
+		int arr1[] = {1, 2, 3};
+		Scanner scanner = new Scanner(System.in);
+		do {
+		int arr2[] = new int[arr1.length + 1];
+		System.out.println("请输入需要填充的数字:>");
+			for(int i = 0; i < arr1.length;i++) {
+				arr2[i] = arr1[i];
+			}
+			arr2[arr2.length - 1] = scanner.nextInt();
+			arr1 = arr2;
+			for(int i = 0;i < arr1.length;i++) {
+				System.out.print(arr1[i] + " ");
+			}
+			System.out.println();
+			System.out.println("是否继续填充yes / no ");
+			String s = scanner.next();
+			if("no".equals(s)) {
+				break;
+			}
+		}while(true);
+		System.out.println("填充完毕！");
+		scanner.close();
+	}
+}
