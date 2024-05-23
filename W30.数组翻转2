@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class h{
+	public static void main(String[] args) {
+		int arr[] = {11, 22, 33, 44, 55, 66};
+		Scanner scanner = new Scanner(System.in);
+		int arr1[] = new int [arr.length];
+		for(int i = arr.length - 1,j = 0;i >= 0;i--, j++) {
+			arr1[j] = arr[i];
+		}
+		arr = arr1;
+		for(int i = 0;i < arr.length;i++) {
+			System.out.print(arr[i]+" ");
+		}
+	}
+}
