@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class h{
+	public static void main(String[] args) {
+		int arr1[] = {1, 3, 2, 0, 90, 6};
+		for(int j = 1; j < arr1.length;j++) {
+			int i = 1;
+			for(i = 1; i < arr1.length;i++) {
+				if(arr1[i] < arr1[i - 1]) {
+					int temp = arr1[i];
+					arr1[i] = arr1[i - 1];
+					arr1[i - 1] = temp;
+				}
+			}
+		}
+		for(int i = 0; i < arr1.length;i++) {
+			System.out.print(arr1[i]+" ");
+		}
+	}
+}
