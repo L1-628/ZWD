@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class h{
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		String input = scanner.next();
+		String n[] = {"白眉鹰王","金毛狮王","紫衫龙王","青翼蝠王"};
+		int ki = -1;
+		for(int i = 0;i < n.length;i++) {
+			if(input.equals(n[i])) {
+				System.out.println("找到了，下标是" + i);
+				ki = i;
+				break;
+			}
+		}
+		if(ki == -1) {
+			System.out.println("对不起没找到" );
+		}
+	}
+}
