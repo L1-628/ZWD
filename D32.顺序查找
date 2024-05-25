@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class Main{
+	public static void main(String[] args) {
+		String n[] = {"白眉鹰王","金毛狮王","紫衫龙王","青翼蝠王"};
+		for(int i = 0;i < n.length;i++) {
+			if("金毛狮王".equals(n[i])) {
+				System.out.println("找到了，下标是" + i);
+			}
+			
+		}
+	}
+}
