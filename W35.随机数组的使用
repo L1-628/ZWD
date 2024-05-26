@@ -1,0 +1,38 @@
+import java.util.Scanner;
+public class h{
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int arr[] = new int[10];
+		for(int i = 0,j = 0; i < 10;i++,j ++) {
+			int num =(int)(Math.random()*100)+1;
+			arr[j] = num;
+		}
+		
+		int sum = 0;
+		int max = Integer.MIN_VALUE;
+		int index = 0;
+		System.out.print("随机生成数组:>");
+		for(int i = 0;i < arr.length ;i++) {
+			System.out.print(arr[i]+" ");
+			if(arr[i] >= max) {
+				max = arr[i];
+				index = i;
+			}
+			sum += arr[i];
+			if(arr[i] == 8) {
+				System.out.println("该数组含有8");
+				break;
+			}
+			
+		}
+		int avg = sum / 10;
+		System.out.println();
+		System.out.print("倒序之后的数组为:>");
+		for(int i = arr.length - 1;i >= 0 ;i--) {
+			System.out.print(arr[i]+" ");
+		}
+		System.out.println();
+		System.out.println("该数组的最大值为"+max+"，下标为"+ index);
+		System.out.println("该数组的平均值为"+avg);
+	}
+}
