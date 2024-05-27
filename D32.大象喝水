@@ -1,0 +1,19 @@
+import java.util.*;
+import java.io.*;
+public class h{
+	public static void main(String[] args) {
+		Scanner cin = new Scanner(System.in);
+		int hight = cin.nextInt();
+		int radius = cin.nextInt();
+		while(cin.hasNext()) {
+			int volume = (int)Math.PI * radius * radius * hight;
+			
+			if(20000 % volume == 0) {
+				System.out.print(20000 / volume);
+			}else {
+				System.out.print(20000 / volume + 1);
+			}
+		}
+		
+	}
+}
