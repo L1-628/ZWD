@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class h{
+	public static void main(String[] args) {
+		Cat cat1 = new Cat();
+		cat1.name = "小白";
+		cat1.color = "白色";
+		cat1.age = 3;
+		Cat cat2 = new Cat();
+		cat2.name = "小花";
+		cat2.color = "花色";
+		cat2.age = 100;
+		System.out.println("第一只"+cat1.color+"的小猫叫"
+		+cat1.name+",它今年"+cat1.age+"岁了。");
+		System.out.println("第二只"+cat2.color+"的小猫叫"
+				+cat2.name+",它今年"+cat2.age+"岁了。");
+	}
+}
+class Cat {
+	String name;
+	String color;
+	int age;
+}
