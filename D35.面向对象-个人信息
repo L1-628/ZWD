@@ -1,0 +1,21 @@
+//访问修饰符：public proctected 默认 private
+import java.util.Scanner;
+public class h{
+	public static void main(String[] args) {
+		person zwd = new person();
+		System.out.println("个人信息:>");
+		System.out.println("名字 "+zwd.name+"\n年龄 "
+		+zwd.age+"\n薪水 "+zwd.sal+"\n面试 "+zwd.isPass);
+	}
+}
+class person{
+	String name;
+	int age;
+	double sal;
+	boolean isPass;
+}
+//个人信息:>
+//名字 null
+//年龄 0
+//薪水 0.0
+//面试 false
