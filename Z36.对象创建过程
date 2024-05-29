@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class h{
+	public static void main(String[] args) {
+		person a = new person();
+		a.name = "小明";
+		a.age = 10;
+		person b;
+		b = a;
+		System.out.println(b.name);
+		b.age = 200;
+		b = null;
+		System.out.println(a.age);
+		System.out.println(b.age);
+	}
+}
+class person{
+	String name;
+	int age;
+}
+//小明
+//200
+//Exception in thread "main" java.lang.NullPointerException: Cannot read field "age" because "b" is null
+//	at h.main(h.java:2902)
+//1.先加载person类信息（属性和方法信息，只会加载一次）
+//2.在堆中分配空间，进行默认初始化（看规则）
+//把地址赋给平p，p就指向对象
+//进行指定初始化，比如p.name = "jack" p.age = 10;
