@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class h{
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int height = scanner.nextInt();
+		int radius = scanner.nextInt();
+		double volume = Math.PI * Math.pow(radius, 2) * height;
+		double b = volume / 1000;
+		System.out.println((int)Math.ceil(20.0 / b));
+	}
+}
+//Math.ceil():"向上取整"，即小数部分直接舍去，
+//并向正数部分进一（如果是负数部分不进1）。
+//该数为小数时，小数部分直接舍去。
