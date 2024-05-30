@@ -1,0 +1,10 @@
+import java.util.Scanner;
+public class h{
+	public static void main(String[] args) {
+		Scanner cin = new Scanner(System.in);
+		double angdeg = cin.nextInt();
+		double h = Math.toRadians(angdeg);
+		System.out.printf("%.3f %.3f",Math.sin(h),Math.cos(h));
+	}
+}
+//Math.toRadians()方法的功能：将一个度数转化为相应的弧度信息
