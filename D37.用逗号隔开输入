@@ -1,0 +1,13 @@
+//scanner.next()只会读取到下一个空白字符（空格、制表符或换行符）为止，而不是整个行。
+//如果你希望用户输入包含逗号的字符串（如"1,2"），你应该使用scanner.nextLine()。
+import java.util.Scanner;
+public class h{
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		String input = scanner.nextLine();
+		String[] nums = input.split(",");
+		int a = Integer.parseInt(nums[0]);
+		int b = Integer.parseInt(nums[1]);
+		System.out.println(a + b);
+	}
+}
