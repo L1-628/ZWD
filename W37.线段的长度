@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class h{
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		double ax = scanner.nextDouble();
+		double ay = scanner.nextDouble();
+		double bx = scanner.nextDouble();
+		double by = scanner.nextDouble();
+		double linelength = Math.sqrt(Math.pow((ax - bx),2) + Math.pow((ay - by),2));
+	    System.out.printf("%.3f",linelength);
+	}
+}
