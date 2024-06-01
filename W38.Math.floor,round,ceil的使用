@@ -1,0 +1,19 @@
+import java.util.Scanner;  
+  //弧度值转化为角度值
+//Math.floor返回一个不大于的最大整数
+//Math.round返回四舍五入
+//Math.ceil返回一个不小于它的最小整数
+public class h {  
+    public static void main(String[] args) {  
+        Scanner scanner = new Scanner(System.in);  
+        System.out.print("请输入一个弧度值: ");  
+        double angleInRadians = scanner.nextDouble();  
+        double angleInDegrees = Math.toDegrees(angleInRadians);  
+        int degrees = (int) Math.floor(angleInDegrees);  
+        double remainingMinutes = (angleInDegrees - degrees) * 60;  
+        int minutes = (int) Math.floor(remainingMinutes);  
+        double remainingSeconds = (remainingMinutes - minutes) * 60;  
+        int seconds = (int) Math.round(remainingSeconds);
+        System.out.printf("%d°%02d′%02d″\n", degrees, minutes, seconds);  
+    } 
+}
