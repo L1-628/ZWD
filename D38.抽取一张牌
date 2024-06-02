@@ -1,0 +1,47 @@
+import java.util.Scanner;
+public class h{
+	public static void main(String[] args) {
+		Scanner cin = new Scanner(System.in);
+		System.out.println("下有一副整理好的牌，请抽取：>");
+		int number = cin.nextInt();
+		String color = null;
+		int trademark = (number - 1) / 4 + 1;
+		String rand = null;
+		if(trademark > 1&&trademark <= 10) {
+			rand = String.valueOf(trademark);
+		}else {
+			switch(trademark) {
+			case 1:
+				rand = "Ace";
+			    break;
+			case 11:
+					rand = "Jack";
+					break;
+			case 12:
+				rand = "Queen";
+				break;
+			case 13:
+				rand = "King";
+				break;
+			default:
+				System.out.println("抽取的牌不存在！");
+			}
+		}
+		switch(number % 4) {
+		
+		case 1:
+			color = "Diamonds";
+			break;
+		case 2:
+			color = "Hearts";
+			break;
+		case 3:
+			color = "Spades";
+			break;
+		default:
+			color = "Clubs";
+		}
+		System.out.println("你抽取的牌是花色为"+color+"的"+rand);
+	}
+}
+
