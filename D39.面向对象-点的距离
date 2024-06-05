@@ -1,0 +1,22 @@
+public class Main {  
+    public static void main(String[] args) {  
+        // 创建一个点对象，并初始化其坐标  
+        Point p = new Point(3, 4);  
+  
+        // 输出点的坐标  
+        p.printPoint();  
+  
+        // 输出点到原点的距离  
+        System.out.println("Distance to origin: " + p.distanceToOrigin());  
+  
+        // 修改点的坐标  
+        p.setPoint(5, 12);  
+  
+        // 再次输出点的坐标和距离  
+        p.printPoint();  
+        System.out.println("New distance to origin: " + p.distanceToOrigin());  
+  
+        // 也可以通过toString方法查看点的信息  
+        System.out.println(p.toString());  
+    }  
+}
