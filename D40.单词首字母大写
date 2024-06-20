@@ -1,0 +1,40 @@
+import java.util.*;
+public class h{
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		while(scanner.hasNext()) {
+			String str = scanner.nextLine();
+			String arr[] = str.split("[ \r\t\n]");
+			for(int i = 0;i < arr.length;i++) {
+				char temp = arr[i].charAt(0);
+				temp -=(temp >= 'a'? 32:0);
+				String zwd = temp + arr[i].substring(1);
+				System.out.printf("%s ",zwd);
+			}
+		System.out.println();
+			
+		}
+	}
+}
+//subString常用方法一：
+//String a = “123456anbdc”;
+//String b = a.subString(1);
+//此时得到的为字符串a从下标为1的位置开始截取到最后的值，也就是23456anbdc；
+//
+//subString常用方法二：
+//String a = “123456anbdc”;
+//String b = a.subString(1，5);
+//此时得到的为字符串a从下标为1的位置开始截取到下标为5的位置的值（不包括下标为5的值），也就是2345；
+//
+//subString常用方法三：
+//String a = “123456anbdc”;
+//String b = a.subString(1，a.indexOf(“b”));
+//此时得到的为字符串a从下标为1的位置开始截取到指定字符串“b”的值，也就是23456an；
+//（注：如指定字符串有多个，以第一个为主）
+//（说明：a.indexOf(“b”)就是取字符串“b”的下标，和上面的用法本质是一样的）
+//temp >= 'a'：这是一个条件表达式，检查 temp 是否大于或等于 'a'（即检查 temp 是否为小写字母）。
+//如果 temp 是小写字母（即 temp >= 'a' 为真），则表达式 temp >= 'a' ? 32 : 0 的值为 32。
+//如果 temp 不是小写字母（即 temp >= 'a' 为假），则表达式 temp >= 'a' ? 32 : 0 的值为 0。
+//然后，这个值（32 或 0）会从 temp 中减去。
+//在ASCII中，大写字母和小写字母之间的差值是32。所以，如果你从小写字母中减去32，你会得到相应的大写字母（但在这个例子中，它实际上并没有这样做，因为逻辑是反的）。
+
