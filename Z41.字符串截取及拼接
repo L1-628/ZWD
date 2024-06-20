@@ -1,0 +1,18 @@
+import java.util.*;
+public class h{
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		while(scanner.hasNext()) {
+			String str = scanner.nextLine();
+			String arr[] = str.split("[ \r\t\n]");
+			for(int i = 0;i < arr.length;i++) {
+				char temp = arr[i].charAt(0);
+				temp -=(temp >= 'a'? 32:0);
+				String zwd = temp + arr[i].substring(1);
+				System.out.printf("%s ",zwd);
+			}
+		System.out.println();
+			
+		}
+	}
+}
